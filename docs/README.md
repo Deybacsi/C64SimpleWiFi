@@ -49,10 +49,10 @@ To build the C64 SimpleWiFi modem, you'll need the following parts:
 
 
 
-| Wemos D1 mini (ESP8266-based WiFi microcontroller) <br> [Link to buy](https://www.aliexpress.com/item/1005007470858524.html)                   | 2x 12-pin 805-24P edge connector (for C64 user port connection) <br> [Link to buy](https://www.aliexpress.com/item/1005004642271363.html) (Select 2x12 (24P) variant)                                    |
+| Wemos D1 mini <br> (ESP8266-based WiFi microcontroller) <br> [Link to buy](https://www.aliexpress.com/item/1005007470858524.html)                   | 2x 12-pin 805-24P edge connector <br> (for C64 user port connection) <br> [Link to buy](https://www.aliexpress.com/item/1005004642271363.html) (Select 2x12 (24P) variant)                                    |
 |-----------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | ![ESP8266](esp8266.png)                                               | ![805-24P](805-24P.png)                                                                             |
-| 3D-printed enclosure (optional but recommended for protection and style) <br> [Link to case](https://www.thingiverse.com/thing:4658368) | 3/4 wires **OR** Prototype PCB <br> [Link to gerber files](C64-SimpleWiFi-gerber)  |
+| 3D-printed enclosure <br> (optional but recommended for protection and style) <br> [Link to case](https://www.thingiverse.com/thing:4658368) | 3/4 wires **OR** Prototype PCB <br> [Link to gerber files](C64-SimpleWiFi-gerber)  |
 | ![3D case](3d_case.png)                                               | ![C64 SimpleWiFi PCB](simplewifi-pcb.png)                                                           |
 
 
