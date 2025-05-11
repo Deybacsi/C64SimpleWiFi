@@ -12,6 +12,11 @@ This is something even a total beginner can build at home. You don't even need t
 
 If you don’t want to burden your C64 by drawing 5V from the user port, you can get away with just three wires and power the Wemos via an external USB power supply instead.
 
+## What it’s not
+
+* It’s not bulletproof. If you plug this into a C64 with a crappy PSU or short something, that’s on you
+* It’s not a polished commercial product. It’s a very simple DIY project by a fellow retro nerd
+  
 ## Key Features
 
 * Plugs into the user port, so the cartridge port remains free.
@@ -25,10 +30,7 @@ If you don’t want to burden your C64 by drawing 5V from the user port, you can
 * Can also be used over USB when plugged into a PC!
   Works with the VICE emulator, allowing you to connect to BBSes even from emulated environments
 
-## What it’s not
 
-* It’s not bulletproof. If you plug this into a C64 with a crappy PSU or short something, that’s on you
-* It’s not a polished commercial product. It’s a very simple DIY project by a fellow retro nerd
 
 ## Disclaimer
 
