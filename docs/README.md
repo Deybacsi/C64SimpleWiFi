@@ -46,9 +46,6 @@ No support, no refunds, no blame.
 
 To build the C64 SimpleWiFi modem, you'll need the following parts:
 
-
-
-
 | Wemos D1 mini <br> (ESP8266-based WiFi microcontroller) <br> [Link to buy](https://www.aliexpress.com/item/1005007470858524.html)                   | 2x 12-pin 805-24P edge connector <br> (for C64 user port connection) <br> [Link to buy](https://www.aliexpress.com/item/1005004642271363.html) (Select 2x12 (24P) variant)                                    |
 |-----------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | ![ESP8266](esp8266.png)                                               | ![805-24P](805-24P.png)                                                                             |
@@ -56,6 +53,8 @@ To build the C64 SimpleWiFi modem, you'll need the following parts:
 | 3D-printed enclosure <br> (optional but recommended for protection and style) <br> [Link to case](https://www.thingiverse.com/thing:4658368) | 3/4 wires **OR** Prototype PCB <br> [Link to gerber files](C64-SimpleWiFi-gerber)  |
 |-----------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | ![3D case](3d_case.png)                                               | ![C64 SimpleWiFi PCB](simplewifi-pcb.png)                                                           |
+
+Also you'll have to download a terminal software like [CCGMS](https://github.com/mist64/ccgmsterm)
 
 ### Wiring Guide
 
@@ -70,11 +69,11 @@ Below is a simple wiring diagram showing how to connect the Wemos D1 mini to the
 | Pin B+C       | RX←TX  | TX (3.3V output)  |
 | Pin M         | TX→RX  | RX (5V input)     | 
 
-⚠️ C64 TX to Wemos RX is 5V → 3.3V. Technically unsafe, but it works in practice. Use at your own risk.
+> ⚠️ C64 TX to Wemos RX is 5V → 3.3V. Technically **unsafe**, but it works in practice. Use at your own risk.
 
 This setup requires just four wires. If you want to power the Wemos externally via USB, you can omit the 5V (red) line from the C64 and use only three wires.
 
-⚠️ **Warning:** Don’t connect **both** USB and C64 5V power at the same time. The two supplies may conflict and damage your hardware. Pick one, not both!
+> ⚠️ **Warning:** Don’t connect **both** USB and C64 5V power at the same time. The two supplies may conflict and damage your hardware. Pick one, not both!
 
 ### How to Use
 
@@ -106,9 +105,9 @@ On the flip side, the ESP's 3.3V TX signal is no problem for the C64; it cleanly
 
 > ⚠️**Warning:** **If you're unsure or not confident with electronics, don't take unnecessary risks. Either build (or buy) a more complex WiFi modem with a proper level shifter, or ask someone who knows what they're doing.**
 
-**It's not worth the stress or frying a perfectly working C64.**
+> **It's not worth the stress or frying a perfectly working C64.**
 
-⚠️**Warning**: Do not connect both the C64 5V and USB power at the same time. Use one power source only! Otherwise you risk damaging your C64, USB adapter, or Wemos.
+> ⚠️**Warning**: Do not connect both the C64 5V and USB power at the same time. Use one power source only! Otherwise you risk damaging your C64, USB adapter, or Wemos.
 
 According to the C64 user port specification, it can provide a maximum of 100 mA on the 5V line.
 The Wemos D1 mini typically draws around 70-80 mA on average, so it's within safe limits under normal operation. You can find measurements [here](https://salvatorelab.com/2023/01/wemos-d1-mini-deep-sleep-current-draw/#:~:text=When%20active%20and%20connected%20to,right%20numbers%20on%20the%20screenshot.&text=During%20deep%20sleep%20the%20current%20is%209.05mA.).
