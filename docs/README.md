@@ -52,7 +52,7 @@ To build the C64 SimpleWiFi modem, you'll need the following parts:
 |-----------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | ![ESP8266](esp8266.png)                                               | ![805-24P](805-24P.png)                                                                             |
 
-| 3D-printed enclosure <br> (optional but recommended for protection and style) <br> [Link to case](https://www.thingiverse.com/thing:4658368) | 3/4 wires **OR** Prototype PCB <br> [Link to gerber files](C64-SimpleWiFi-gerber)  |
+| 3D-printed enclosure <br> (optional but recommended for protection and style) <br> [Link to case](https://www.thingiverse.com/thing:4658368) | 3/4 wires **OR** Prototype PCB <br> [Link to gerber files](C64-SimpleWiFi-gerber.zip)  |
 |-----------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | ![3D case](3d_case.png)                                               | ![C64 SimpleWiFi PCB](simplewifi-pcb.png)                                                           |
 
