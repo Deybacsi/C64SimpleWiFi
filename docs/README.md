@@ -42,6 +42,24 @@ If you build, flash, plug in, or otherwise interact with this project, you do so
 
 No support, no refunds, no blame.
 
+### Wiring Guide
+
+Below is a simple wiring diagram showing how to connect the Wemos D1 mini to the Commodore 64 user port using a standard edge connector:
+![wiring](schematics2.png)
+
+
+| C64 User Port | Signal | Wemos D1 mini     |
+|---------------|--------|-------------------|
+| Pin 2         | 5V     | 5V                |
+| Pin A+N       | GND    | GND               |
+| Pin B+C       | RX←TX  | TX (3.3V output)  |
+| Pin M         | TX→RX  | RX (5V input)     | 
+
+⚠️ C64 TX to Wemos RX is 5V → 3.3V. Technically unsafe, but it works in practice. Use at your own risk.
+
+This setup requires just four wires. If you want to power the Wemos externally via USB, you can omit the 5V (red) line from the C64 and use only three wires.
+
+⚠️ **Warning:** Don’t connect **both** USB and C64 5V power at the same time. The two supplies may conflict and damage your hardware. Pick one, not both!
 
 ### How to Use
 
@@ -54,6 +72,14 @@ No support, no refunds, no blame.
 5. Connect with terminal software (e.g. CCGMS) (Setup CCGMS modem type for Zimodem and 2400baud)
 6. Surf the BBS world like it’s 1988
 
+### Zimodem flash & configuration
+
+TODO
+
+### CCGMS setup
+
+TODO
+
 ### Voltage Level Note
 
 The C64 user port outputs 5V TTL signals. The ESP8266 expects 3.3V on its RX pin, and according to the current official specs, 5V input is not guaranteed to be safe.
@@ -63,9 +89,13 @@ And hey, even if the ESP blows up, what’s the real damage? You just lost \$3. 
 
 On the flip side, the ESP's 3.3V TX signal is no problem for the C64; it cleanly registers as a valid logic high anything above 3V.
 
-**If you're unsure or not confident with electronics, don't take unnecessary risks. Either build a more complex WiFi modem with a proper level shifter, or ask someone who knows what they're doing. (Or buy one from the net) 
+**If you're unsure or not confident with electronics, don't take unnecessary risks. Either build (or buy) a more complex WiFi modem with a proper level shifter, or ask someone who knows what they're doing.**
 
-It's not worth the stress or frying a perfectly working C64.**
+**It's not worth the stress or frying a perfectly working C64.**
 
+⚠️ Warning: Do not connect both the C64 5V and USB power at the same time. Use one power source only! Otherwise you risk damaging your C64, USB adapter, or Wemos.
+
+According to the C64 user port specification, it can provide a maximum of 100 mA on the 5V line.
+The Wemos D1 mini typically draws around 70-80 mA on average, so it's within safe limits under normal operation. You can find measurements [here](https://salvatorelab.com/2023/01/wemos-d1-mini-deep-sleep-current-draw/#:~:text=When%20active%20and%20connected%20to,right%20numbers%20on%20the%20screenshot.&text=During%20deep%20sleep%20the%20current%20is%209.05mA.).
 
 
