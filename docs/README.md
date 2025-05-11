@@ -99,7 +99,7 @@ TODO
 ## Voltage Level Note
 
 The C64 user port outputs 5V TTL signals. The ESP8266 expects 3.3V on its RX pin, and according to the current official specs, 5V input is not guaranteed to be safe.
-That said, earlier versions of the datasheet listed 5V-tolerant inputs, and real-world use shows that most ESP8266 boards (including the Wemos D1 mini) survive and function just fine when fed 5V UART from the C64.
+However, earlier versions of the datasheet listed 5V-tolerant inputs, and real-world use shows that most ESP8266 boards (including the Wemos D1 mini) survive and function just fine when fed 5V UART from the C64.
 
 And hey, even if the ESP blows up, what’s the real damage? You just lost \$3. It’s cheaper than a pizza.
 
