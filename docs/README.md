@@ -25,12 +25,12 @@ If you don’t want to burden your C64 by drawing 5V from the user port, you can
 * Can also be used over USB when plugged into a PC!
   Works with the VICE emulator, allowing you to connect to BBSes even from emulated environments
 
-### What it’s not
+## What it’s not
 
 * It’s not bulletproof. If you plug this into a C64 with a crappy PSU or short something, that’s on you
 * It’s not a polished commercial product. It’s a very simple DIY project by a fellow retro nerd
 
-### Disclaimer
+## Disclaimer
 
 This is a hobby project provided "as is", with no guarantees or warranties of any kind.
 
@@ -42,7 +42,7 @@ If you build, flash, plug in, or otherwise interact with this project, you do so
 
 No support, no refunds, no blame.
 
-### Required Components
+## Required Components
 
 To build the C64 SimpleWiFi modem, you'll need the following parts:
 
@@ -56,7 +56,7 @@ To build the C64 SimpleWiFi modem, you'll need the following parts:
 
 Also you'll have to download a terminal software like [CCGMS](https://github.com/mist64/ccgmsterm)
 
-### Wiring Guide
+## Wiring Guide
 
 Below is a simple wiring diagram showing how to connect the Wemos D1 mini to the Commodore 64 user port using a standard edge connector:
 ![wiring](schematics2.png)
@@ -75,7 +75,7 @@ This setup requires just four wires. If you want to power the Wemos externally v
 
 > ⚠️ **Warning:** Don’t connect **both** USB and C64 5V power at the same time. The two supplies may conflict and damage your hardware. Pick one, not both!
 
-### How to Use
+## How to Use
 
 1. Flash your Wemos D1 mini with [Zimodem](https://github.com/bozimmerman/Zimodem) (or other compatible modem firmware) from a PC
 2. Setup Zimodem (Connect to WiFi, and setup speed - recommended: 2400 baud - this is the max for this modem)
@@ -86,15 +86,15 @@ This setup requires just four wires. If you want to power the Wemos externally v
 5. Connect with terminal software (e.g. CCGMS) (Setup CCGMS modem type for Zimodem and 2400baud)
 6. Surf the BBS world like it’s 1988
 
-### Zimodem flash & configuration
+## Zimodem flash & configuration
 
 TODO
 
-### CCGMS setup
+## CCGMS setup
 
 TODO
 
-### Voltage Level Note
+## Voltage Level Note
 
 The C64 user port outputs 5V TTL signals. The ESP8266 expects 3.3V on its RX pin, and according to the current official specs, 5V input is not guaranteed to be safe.
 That said, earlier versions of the datasheet listed 5V-tolerant inputs, and real-world use shows that most ESP8266 boards (including the Wemos D1 mini) survive and function just fine when fed 5V UART from the C64.
@@ -112,6 +112,6 @@ On the flip side, the ESP's 3.3V TX signal is no problem for the C64; it cleanly
 According to the C64 user port specification, it can provide a maximum of 100 mA on the 5V line.
 The Wemos D1 mini typically draws around 70-80 mA on average, so it's within safe limits under normal operation. You can find measurements [here](https://salvatorelab.com/2023/01/wemos-d1-mini-deep-sleep-current-draw/#:~:text=When%20active%20and%20connected%20to,right%20numbers%20on%20the%20screenshot.&text=During%20deep%20sleep%20the%20current%20is%209.05mA.).
 
-### Inspiration & Thanks
+## Inspiration & Thanks
 
 This project is heavily based on the guide at [RetroGameCoders](https://retrogamecoders.com/commodore-64-wifi-esp8266/). The core idea and wiring are almost the same, this version just provides more detailed documentation. And a manufacturable PCB design :)
