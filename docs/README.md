@@ -23,7 +23,7 @@ If you don’t want to burden your C64 by drawing 5V from the user port, you can
   You can still use a fastloader or any other expansion there
 * Hayes modem compatible (AT commands)
 * Compatible with CCGMS C64 terminal software
-* Powered directly from C64 userport, or from an external usb power supply
+* Powered directly from C64 userport, **or** from an external usb power supply
 * No level shifters, or extra circuitry, no LEDs, no buttons, no frills
 * Designed to use the absolute minimum number of components and easiest DIY assembly
 * Maximum 2400 bits/sec speed
