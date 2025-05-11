@@ -104,13 +104,15 @@ And hey, even if the ESP blows up, what’s the real damage? You just lost \$3. 
 
 On the flip side, the ESP's 3.3V TX signal is no problem for the C64; it cleanly registers as a valid logic high anything above 3V.
 
-**If you're unsure or not confident with electronics, don't take unnecessary risks. Either build (or buy) a more complex WiFi modem with a proper level shifter, or ask someone who knows what they're doing.**
+> ⚠️**Warning:** **If you're unsure or not confident with electronics, don't take unnecessary risks. Either build (or buy) a more complex WiFi modem with a proper level shifter, or ask someone who knows what they're doing.**
 
 **It's not worth the stress or frying a perfectly working C64.**
 
-⚠️ Warning: Do not connect both the C64 5V and USB power at the same time. Use one power source only! Otherwise you risk damaging your C64, USB adapter, or Wemos.
+⚠️**Warning**: Do not connect both the C64 5V and USB power at the same time. Use one power source only! Otherwise you risk damaging your C64, USB adapter, or Wemos.
 
 According to the C64 user port specification, it can provide a maximum of 100 mA on the 5V line.
 The Wemos D1 mini typically draws around 70-80 mA on average, so it's within safe limits under normal operation. You can find measurements [here](https://salvatorelab.com/2023/01/wemos-d1-mini-deep-sleep-current-draw/#:~:text=When%20active%20and%20connected%20to,right%20numbers%20on%20the%20screenshot.&text=During%20deep%20sleep%20the%20current%20is%209.05mA.).
 
+### Inspiration & Thanks
 
+This project is heavily based on the guide at [RetroGameCoders](https://retrogamecoders.com/commodore-64-wifi-esp8266/). The core idea and wiring are almost the same, this version just provides more detailed documentation. And a manufacturable PCB design :)
