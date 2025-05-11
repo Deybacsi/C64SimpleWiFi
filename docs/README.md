@@ -2,7 +2,7 @@
 
 **Simple WiFi solution for your not-so-simple C64**
 
-### What is it?
+## What is it?
 
 C64 SimpleWiFi is a minimalistic WiFi modem interface for the Commodore 64. It plugs into the C64's user port and uses a Wemos D1 mini (ESP8266) module running modem firmware such as [Zimodem](https://github.com/bozimmerman/Zimodem).
 
@@ -12,7 +12,7 @@ This is something even a total beginner can build at home. You don't even need t
 
 If you don’t want to burden your C64 by drawing 5V from the user port, you can get away with just three wires and power the Wemos via an external USB power supply instead.
 
-### Key Features
+## Key Features
 
 * Plugs into the user port, so the cartridge port remains free.
   You can still use a fastloader or any other expansion there
